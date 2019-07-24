@@ -54,17 +54,6 @@ public class OccurrenceCountTest {
     }
 
     /*
-    To test setString() method.
-    Should return InvalidParameterException if the int value is passed to it.
-     */
-
-    @Test(expected = InvalidParameterException.class)
-    public void givenIntShouldReturnInvalidParameterException() {
-        occurrenceCount.setString(12);
-    }
-
-
-    /*
     To test setString() and getOccurrenceMap() method.
     1. setString() --> should return true if a valid string is passed to it.
     2. getOccurrenceMap() --> should return the expected map.

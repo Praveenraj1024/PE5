@@ -17,10 +17,10 @@ public class ArrayElementUpdation {
     public boolean setArray(String[] givenStringArray){
         boolean boo = false;
         if (givenStringArray == null){
-            throw new NullPointerException();
+            int i = givenStringArray.length;
         }
         else if (givenStringArray.length == 0){
-            throw new RuntimeException("You have entered an empty array.");
+            String strings = givenStringArray[1];
         }
         else {
             this.givenStringArray = givenStringArray;
@@ -47,7 +47,7 @@ public class ArrayElementUpdation {
             Collections.replaceAll(stringList, key, stringMap.get(key));
         }
         String[] updatedArray = stringList.toArray(new String[stringList.size()]);
-        stringList.clear();
+//        stringList.clear();
         return updatedArray;
     }
 }

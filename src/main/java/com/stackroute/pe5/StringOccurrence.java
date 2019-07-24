@@ -10,10 +10,10 @@ public class StringOccurrence {
     public boolean setArray(String[] givenArray){
         boolean boo = false;
         if (givenArray == null){
-            throw new NullPointerException();
+            int length = givenArray.length;
         }
         else if (givenArray.length == 0){
-            throw new RuntimeException("You have passed an empty array");
+            String string = givenArray[1];
         }
         else {
             this.givenArray = givenArray;
